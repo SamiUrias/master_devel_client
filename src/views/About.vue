@@ -31,10 +31,10 @@
 
                     <b-form-row>
                         <b-col>
-                            <b-button class="mt-3 w-100" variant="primary" @click="getSingleMessage">Get tag messages</b-button>
+                            <b-button class="mt-3 w-100" variant="primary" @click="getSingleMessage">Get id messages</b-button>
                         </b-col>
                         <b-col>
-                            <b-button class="mt-3 w-100" variant="primary" @click="getSingleTagMessages">Get id messages</b-button>
+                            <b-button class="mt-3 w-100" variant="primary" @click="getSingleTagMessages">Get tag messages</b-button>
                         </b-col>
                     </b-form-row>
                     <b-form-row>
@@ -97,6 +97,7 @@
             },
             async getSingleMessage() {
                 try {
+                    console.log("Get single message")
                     const response = await axios.get(process.env.VUE_APP_HOST + '/api/message/'+this.id+'/',  { headers: {
                             "x-key":this.x_key,
                             "x-route":this.x_route,

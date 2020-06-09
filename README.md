@@ -1,5 +1,10 @@
 # client
 
+## Clone the project
+```
+git clone https://github.com/SamiUrias/master_devel_client.git
+```
+
 ## Project setup
 ```
 yarn install
