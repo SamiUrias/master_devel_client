@@ -123,7 +123,6 @@
                     this.response_code = error.response.status
                 }
             },
-
         },
         components: {}
     };
